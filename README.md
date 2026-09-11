@@ -61,32 +61,6 @@ Open `http://localhost:3000` in your browser.
 ### 4. Production Build
 ```bash
 npm run build
-```
-Generates production-ready optimized assets in the `dist/` directory.
-
----
-
-## GitHub Pages Deployment
-
-This repository includes an automated GitHub Actions deployment workflow (`.github/workflows/deploy.yml`).
-
-### Setup:
-1. Push this project to your GitHub repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Marci Metzger luxury real estate website"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-   git push -u origin main
-   ```
-2. In your GitHub repository:
-   - Go to **Settings** > **Pages**.
-   - Under **Build and deployment** > **Source**, select **GitHub Actions**.
-3. Every push to `main` will automatically build and publish the website to:
-   ```
-   https://<your-username>.github.io/<your-repo-name>/
-   ```
 
 ---
 
