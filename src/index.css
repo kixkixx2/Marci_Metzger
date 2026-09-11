@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #BFA15F33;
+    color: #191817;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FBF9F5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D5CCBD;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #85786B;
+  }
+}
+
+@layer utilities {
+  .editorial-title {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.08em;
+  }
+
+  .editorial-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .editorial-subheading {
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .border-editorial {
+    border-color: rgba(92, 80, 68, 0.15);
+  }
+
+  .border-editorial-dark {
+    border-color: rgba(235, 229, 218, 0.12);
+  }
+}
